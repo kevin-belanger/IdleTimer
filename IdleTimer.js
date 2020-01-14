@@ -1,6 +1,13 @@
-/**
-* 
-*/
+  
+/*
+ * IdleTimer by Kevin Bélanger
+ * https://github.com/kevin-belanger/IdleTimer
+ * 
+ * Trigger a callback (like redirection) when users are inactive.
+ * 
+ * Usage example: redirect to logout.php after 1 minutes of inactivity.
+ * idleTimer(60000, 'logout.php'); 
+ */
 function idleTimer(callbackDelay, callbackURL, options) {
 	
 	options = options || {};
