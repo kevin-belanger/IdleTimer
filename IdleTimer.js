@@ -19,7 +19,7 @@ function idleTimer(callbackDelay, callbackURL, options) {
 	callbackURL = callbackURL || 'https://github.com/';
 	
 	//Default callback (can be override though "options" param)
-	options.callback = function(){
+	options.callback = options.callback || function(){
 		document.location.href = callbackURL;
 	};
 	
